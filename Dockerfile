@@ -10,15 +10,15 @@ WORKDIR /tmp/bento4
 
 # Instalação de dependências em uma única camada com versões fixadas
 RUN apk add --no-cache \
-  ffmpeg=6.0.0-r3 \
-  bash=5.2.21-r0 \
-  make=4.4.1-r1 \
-  cmake=3.27.8-r0 \
-  python3=3.11.8-r0 \
-  gcc=13.2.1_git20231014-r0 \
-  g++=13.2.1_git20231014-r0 \
-  wget=1.21.4-r0 \
-  unzip=6.0-r14 && \
+  ffmpeg=6.1.2-r1 \
+  bash=5.2.37-r0 \
+  make=4.4.1-r2 \
+  cmake=3.31.1-r0 \
+  python3=3.12.10-r0 \
+  gcc=14.2.0-r4 \
+  g++=14.2.0-r4 \
+  wget=1.25.0-r0 \
+  unzip=6.0-r15 && \
   # Download e descompactação do Bento4
   wget -q "http://zebulon.bok.net/Bento4/source/Bento4-SRC-${BENTO4_VERSION}.zip" && \
   unzip "Bento4-SRC-${BENTO4_VERSION}.zip" -d ${BENTO4_PATH} && \
